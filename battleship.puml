@@ -1,0 +1,19 @@
+@startuml
+annotation java.lang.Override
+class battleship.JFrame
+class battleship.Main
+class battleship.ShipPlacement
+class battleship.StartFrame
+class java.awt.event.ActionEvent
+class java.awt.event.ActionListener
+class java.awt.event.MouseEvent
+class java.awt.event.MouseListener
+battleship.ShipPlacement ..> java.lang.Override
+battleship.ShipPlacement --|> battleship.JFrame
+battleship.ShipPlacement ..> java.awt.event.MouseEvent
+battleship.ShipPlacement ..> java.awt.event.MouseListener
+battleship.StartFrame ..> java.lang.Override
+battleship.StartFrame --|> battleship.JFrame
+battleship.StartFrame ..> java.awt.event.ActionEvent
+battleship.StartFrame ..> java.awt.event.ActionListener
+@enduml
